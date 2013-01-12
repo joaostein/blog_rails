@@ -17,8 +17,11 @@ head
   meta name="viewport" content="width=device-width, initial-scale=1"
   = csrf_meta_tags
 
-  / = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700,600'
-  = stylesheet_link_tag 'application'
+  = stylesheet_link_tag 'style', :media => 'screen, handheld'
+  = stylesheet_link_tag 'application', :media => 'screen  and (min-width: 40.5em)'
+  /[if (lt IE 9)&(!IEMobile)]
+    = stylesheet_link_tag 'application'
+
   = javascript_include_tag 'modernizr'
 
 body
