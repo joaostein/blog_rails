@@ -17,10 +17,7 @@ head
   meta name="viewport" content="width=device-width, initial-scale=1"
   = csrf_meta_tags
 
-  = stylesheet_link_tag 'style', :media => 'screen, handheld'
-  = stylesheet_link_tag 'application', :media => 'screen  and (min-width: 40.5em)'
-  /[if (lt IE 9)&(!IEMobile)]
-    = stylesheet_link_tag 'application'
+  = stylesheet_link_tag 'application'
 
   = javascript_include_tag 'modernizr'
 
@@ -29,7 +26,7 @@ body
 
   = javascript_include_tag "application"
   = javascript_include_tag "hashgrid"
-
+  
   /[if (gte IE 6)&(lte IE 8)]
     script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"
     = javascript_include_tag "selectivizr"

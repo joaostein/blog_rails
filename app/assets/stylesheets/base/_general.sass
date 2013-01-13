@@ -10,7 +10,12 @@
 +establish-baseline
 
 .container
+  +susy-grid-background
   +container
+
++at-breakpoint(40em 6)
+  .container
+    +susy-grid-background
 
 
 //-----------------------------------------------------------------------
@@ -24,25 +29,13 @@
 //-----------------------------------------------------------------------
 
 #grid
-  width: $total-grid-width
+  width: 100%
   position: absolute
   top: 0
-  left: 50%
-  margin-left: - $total-grid-width / 2
-  div
-    &.vert
-      width: $column-width
-      border: solid darkturquoise
-      border-width: 0 1px
-      margin-right: $gutter-width
-      background: red
-      opacity: .1
-      &.first-line
-        margin-left: $grid-padding
-      &:last-child
-        margin-right: $grid-padding
-    &.horiz
-      height: $base-line-height
-      border-bottom: 1px dotted darkgray
-      margin: 0
-      padding: 0
+  left: 0
+  right: 0
+  .horiz
+    height: $base-line-height
+    border-bottom: 1px dotted darkgray
+    margin: 0
+    padding: 0
