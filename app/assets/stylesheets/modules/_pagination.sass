@@ -1,0 +1,53 @@
+//-----------------------------------------------------------------------
+// 
+//  Modules » Pagination
+// 
+//  Contains all pagination configurations.
+// 
+//-----------------------------------------------------------------------
+
+.pagination
+  +margin-leader(1)
+  height: $base-line-height * 2
+
+
+.pagination-list
+  +pie-clearfix
+  
+  display: inline-block
+  margin-left: 0
+  margin-bottom: 0
+  padding-left: 0
+  +border-radius(4px)
+  +box-shadow(rgba(0, 0, 0, .1) 0 1px 2px)
+
+  li
+    float: left
+
+  a
+    display: block
+    padding: 4px 12px
+    line-height: $base-line-height
+    text-decoration: none
+    background-color: #fff
+    border: 1px solid #ddd
+    border-left-width: 0
+    &:hover
+      background-color: #f5f5f5
+
+.pagination-active
+  color: #999
+  cursor: default
+  background-color: #f5f5f5
+
+.pagination-disabled, .pagination-disabled:hover
+  color: #999
+  background-color: transparent
+  cursor: default
+
+.pagination li:first-child a
+  border-left-width: 1px
+  +border-left-radius(4px)
+
+.pagination li:last-child a
+  +border-right-radius(4px)

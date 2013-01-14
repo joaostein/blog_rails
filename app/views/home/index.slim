@@ -15,15 +15,24 @@ header.header-main
   div role="main"
     - 3.times do
       article.post
-        header
-          h1 Sem Fringilla Fermentum Cras
-          time datetime="2013-01-20" 20/01/2013
+        header.post-header
+          h1.post-title Sem Fringilla Fermentum Cras
+          time.post-date datetime="2013-01-20" 20/01/2013
         p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-        figure.post-image
-          img src="assets/tmp/post-image.jpg"
-          figcaption Maecenas sed diam eget risus varius blandit sit amet non magna.
+        figure
+          img.post-image src="assets/tmp/post-image.jpg"
+          figcaption.post-description Maecenas sed diam eget risus varius blandit sit amet non magna.
         p Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
         a.button.button-details href="#" Leia Mais
+
+    nav.pagination
+      ul.pagination-list
+        li: a.pagination-disabled href="#" Anterior
+        li: a.pagination-active href="#" 1
+        li: a href="#" 2
+        li: a href="#" 3
+        li: a href="#" 4
+        li: a href="#" Próxima
 
 
 
