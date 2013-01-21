@@ -3,14 +3,14 @@ header.header-main
     a.logo href="#" title="Home"
       img src="assets/tmp/logo.png"
 
-    a.menu-condensed-trigger
+    a.menu-condensed-trigger href="#"
       - 3.times do
         span
 
 .container
-  / nav.nav-posts
-  /   a.nav-posts-left href="#" &larr; Anteriores
-  /   a.nav-posts-right href="#" Recentes &rarr;
+  nav.controls
+    a.controls-anchor.controls-anchor-left href="#" &larr; Anteriores
+    a.controls-anchor.controls-anchor-right href="#" Recentes &rarr;
 
   div role="main"
     - 3.times do
@@ -25,14 +25,20 @@ header.header-main
         p Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
         a.button.button-details href="#" Leia Mais
 
-    nav.pagination
-      ul.pagination-list
-        li: a.pagination-disabled href="#" Anterior
-        li: a.pagination-active href="#" 1
-        li: a href="#" 2
-        li: a href="#" 3
-        li: a href="#" 4
-        li: a href="#" Próxima
+    .controls
+      nav.pagination
+        ul.pagination-list
+          li: a.pagination-disabled href="#" «
+          li: a.pagination-active href="#" 1
+          li: a href="#" 2
+          li: a href="#" 3
+          li: a href="#" 4
+          li: a href="#" 5
+          li: a href="#" »
+
+      a.controls-anchor.back-to-top href="#" Voltar ao Topo
+
+
 
 
 

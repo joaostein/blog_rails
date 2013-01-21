@@ -6,16 +6,17 @@
 // 
 //-----------------------------------------------------------------------
 
-
-.nav-posts
+.controls
   +pie-clearfix
-  +trailing-border(1px, 0)
+  +padding-leader(0.5)
+  +trailing-border(1px, 0.5)
   border-color: #ccc
-  a
-    +rhythm($padding-leader: 0.5, $padding-trailer: 0.5)
 
-.nav-posts-left
+.controls-anchor
+  +rhythm($padding-leader: 0.5, $padding-trailer: 0.5)
+
+.controls-anchor-left, .back-to-top
   float: left
 
-.nav-posts-right
+.controls-anchor-right
   float: right

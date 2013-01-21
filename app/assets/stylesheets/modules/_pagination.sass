@@ -7,19 +7,17 @@
 //-----------------------------------------------------------------------
 
 .pagination
-  +margin-leader(1)
+  +rhythm($leader: 0.5, $trailer: 0.5)
   height: $base-line-height * 2
-
 
 .pagination-list
   +pie-clearfix
-  
+  +border-radius(4px)
+  +box-shadow(rgba(0, 0, 0, .1) 0 1px 2px)
   display: inline-block
   margin-left: 0
   margin-bottom: 0
   padding-left: 0
-  +border-radius(4px)
-  +box-shadow(rgba(0, 0, 0, .1) 0 1px 2px)
 
   li
     float: left
@@ -46,8 +44,8 @@
   cursor: default
 
 .pagination li:first-child a
-  border-left-width: 1px
   +border-left-radius(4px)
+  border-left-width: 1px
 
 .pagination li:last-child a
   +border-right-radius(4px)
