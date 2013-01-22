@@ -26,10 +26,6 @@ body
 
   = javascript_include_tag "application"
 
-  / remove in production
-  = javascript_include_tag "hashgrid"
-  = javascript_include_tag "holder"
-
   /[if (gte IE 6)&(lte IE 8)]
     script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"
     = javascript_include_tag "selectivizr"
