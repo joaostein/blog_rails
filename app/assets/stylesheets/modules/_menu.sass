@@ -6,15 +6,42 @@
 // 
 //-----------------------------------------------------------------------
 
+.menu-main
+  +span-columns(1)
+  +margin-trailer(1)
+  +border-radius(3px 0px 3px 3px)
+  background: rgba(0, 0, 0, 0.6)
+  ul
+    +rhythm($padding-leader: 0.5, $padding-trailer: 0.5)
+    padding-left: 0.75em
+    padding-right: 0.75em
+
+.menu-anchor
+  a
+    +rhythm($padding-leader: 0.5, $padding-trailer: 0.5)
+    +trailing-border(1px, 0.5)
+    padding-left: 0.75em
+    padding-right: 0.75em
+    display: block
+    text-decoration: none
+    color: #000
+    background: rgba(255, 255, 255, 0.9)
+    border-color: rgba(0, 0, 0, 0.6)
+
 .menu-condensed-trigger
   +rhythm($padding-leader: 0.35, $padding-trailer: 0.3)
-  float: right
-
+  +border-radius(3px)
+  background: rgba(0, 0, 0, 0.6)
+  position: absolute
+  right: 1em
   span
-    +box-shadow(0 6px 5px #000)
     +border-radius(3px)
     width: 30px
     height: 5px
-    margin: 4px
+    margin: 4px 7px
     display: block
     background: #fff
+
+.menu-condensed-trigger-active
+  padding-bottom: 1.26em
+  +border-bottom-radius(0)

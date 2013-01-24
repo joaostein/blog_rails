@@ -1,11 +1,18 @@
 header.header-main
   .container
-    a.logo href="#" title="Home"
-      img src="assets/tmp/logo.png"
+    .header-main-wrapper
+      a.logo href="#" title="Home"
+        img height="48" src="assets/tmp/logo.png"
 
-    a.menu-condensed-trigger href="#"
-      - 3.times do
-        span
+      / .menu-condensed-trigger-active to activate menu
+      a.menu-condensed-trigger href="#"
+        - 3.times do
+          span
+
+    nav.menu-main.notVisible
+      ul
+        li.menu-anchor: a href="#" Quem sou?
+        li.menu-anchor: a href="#" Projetos
 
 .container
   nav.controls
@@ -45,6 +52,3 @@ footer.footer-main
       legend "The Spirit of Imagination"
     p: a href="mailto:joaosteing@gmail.com" joaosteing@gmail.com
     p: a href="#" @joaostein
-
-
-/ 5, 10, 12, 21, 22
