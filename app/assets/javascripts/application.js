@@ -12,4 +12,9 @@
 // 
 //= require jquery
 //= require jquery_ujs
+//= require prettify
 //= require menu
+
+$(function(){
+  prettyPrint();
+});
